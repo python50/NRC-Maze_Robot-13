@@ -1,0 +1,3135 @@
+Microchip MPLAB XC8 Compiler V1.12 ()
+
+Linker command line:
+
+--edf=/opt/microchip/xc8/v1.12/dat/en_msgs.txt -cs \
+  -h+dist/PIC18F46K22/production/maze.X.production.sym -z -Q18F46K22 \
+  -ol.obj -Mdist/PIC18F46K22/production/maze.X.production.map -E1 -ver=XC8 \
+  -ACODE=00h-0FFFFh -ACONST=00h-0FFFFh -ASMALLCONST=01000h-010FFhx240 \
+  -AMEDIUMCONST=01000h-0FFFFh -ACOMRAM=01h-05Fh -AABS1=00h-0F37h \
+  -ABIGRAM=01h-0F37h -ARAM=060h-0FFh,0100h-01FFhx14,0F00h-0F37h \
+  -ABANK0=060h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
+  -ABANK3=0300h-03FFh -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh \
+  -ABANK6=0600h-06FFh -ABANK7=0700h-07FFh -ABANK8=0800h-08FFh \
+  -ABANK9=0900h-09FFh -ABANK10=0A00h-0AFFh -ABANK11=0B00h-0BFFh \
+  -ABANK12=0C00h-0CFFh -ABANK13=0D00h-0DFFh -ABANK14=0E00h-0EFFh \
+  -ABANK15=0F00h-0F37h -ASFR=0F38h-0F5Fh,0F60h-0FFFh \
+  -preset_vec=00h,intcode=08h,intcodelo=018h,powerup,init,end_init \
+  -pramtop=01000h -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST \
+  -pconst=CONST -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh -pconfig=CONFIG \
+  -AIDLOC=0200000h-0200007h -pidloc=IDLOC -AEEDATA=0F00000h-0F003FFh \
+  -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE /tmp/cgtKhyKIk.obj \
+  dist/PIC18F46K22/production/maze.X.production.obj 
+
+Object code version is 3.10
+
+Machine type is 18F46K22
+
+Call graph: (short form)
+
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+/tmp/cgtKhyKIk.obj
+                end_init                             A2       A2        4        C       0
+                reset_vec                             0        0        4        0       0
+                idloc                            200000   200000        8   200000       0
+                config                           300000   300000        E   300000       0
+dist/PIC18F46K22/production/maze.X.production.obj
+                intcodelo                            18       18       8A        C       0
+                intcode                               8        8       10        4       0
+                mediumconst                        FDE2     FDE2      21E     7EF1       0
+                text60                             1F2C     1F2C       36        C       0
+                text59                             21B8     21B8        8        C       0
+                text58                             2082     2082       22        C       0
+                text57                             21B0     21B0        8        C       0
+                text56                             2060     2060       22        C       0
+                text55                             1EF4     1EF4       38        C       0
+                text54                             1736     1736       A2        C       0
+                intcode_body                       10AC     10AC       DA        C       0
+                text51                             1C46     1C46       68        C       0
+                text50                             17D8     17D8       A0        C       0
+                text49                             125A     125A       C0        C       0
+                text48                             2186     2186       10        C       0
+                text47                             203E     203E       22        C       0
+                text46                              9AE      9AE      162        C       0
+                text45                             1DB6     1DB6       4A        C       0
+                text44                             1E7C     1E7C       3E        C       0
+                text43                             1E3E     1E3E       3E        C       0
+                text42                             1FEE     1FEE       2E        C       0
+                text41                             1FC0     1FC0       2E        C       0
+                text40                             1F92     1F92       2E        C       0
+                text39                              ED4      ED4       F4        C       0
+                text38                             1186     1186       D4        C       0
+                text37                              41A      41A      2E2        C       0
+                text36                              6FC      6FC      2B2        C       0
+                text35                             2164     2164       12        C       0
+                text34                              DA4      DA4      130        C       0
+                text33                             1CAE     1CAE       62        C       0
+                text32                             1A34     1A34       8C        C       0
+                text31                             1692     1692       A4        C       0
+                text30                             19A8     19A8       8C        C       0
+                text29                             1B48     1B48       82        C       0
+                text28                             1D10     1D10       54        C       0
+                text27                             1AC0     1AC0       88        C       0
+                text26                             1EBA     1EBA       3A        C       0
+                text25                             20A4     20A4       20        C       0
+                text24                             2196     2196        E        C       0
+                text23                             15E2     15E2       B0        C       0
+                text22                             211E     211E       1E        C       0
+                text21                             1532     1532       B0        C       0
+                text20                             2100     2100       1E        C       0
+                text19                             1482     1482       B0        C       0
+                text18                             20E2     20E2       1E        C       0
+                text17                             13D2     13D2       B0        C       0
+                text16                             20C4     20C4       1E        C       0
+                text15                              FC8      FC8       E4        C       0
+                text14                             21C0     21C0        6        C       0
+                text13                             2176     2176       10        C       0
+                text12                             21A4     21A4        C        C       0
+                text11                             1D64     1D64       52        C       0
+                text10                             1BCA     1BCA       7C        C       0
+                text9                              1E00     1E00       3E        C       0
+                text8                              1916     1916       92        C       0
+                text7                              213C     213C       16        C       0
+                text6                               B10      B10      152        C       0
+                text5                              2152     2152       12        C       0
+                text4                              131A     131A       B8        C       0
+                text3                              201C     201C       22        C       0
+                text2                               C62      C62      142        C       0
+                text1                              1878     1878       9E        C       0
+                text0                                A6       A6      374        C       0
+                cstackCOMRAM                          1        1       29        1       1
+                cstackBANK0                          BF       BF       29       60       1
+                bssBANK0                             60       60       5F       60       1
+                dataCOMRAM                           3A       3A        1        1       1
+                bssCOMRAM                            2A       2A       10        1       1
+                cinit                              1F62     1F62       30        C       0
+                idataCOMRAM                        21C6     21C6        1        C       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+                end_init                             A2       A2        4         0
+                intcodelo                            18       18       8A         0
+                intcode                               8        8       10         0
+                reset_vec                             0        0        4         0
+                text60                             1F2C     1F2C       36         0
+                text59                             21B8     21B8        8         0
+                text58                             2082     2082       22         0
+                text57                             21B0     21B0        8         0
+                text56                             2060     2060       22         0
+                text55                             1EF4     1EF4       38         0
+                text54                             1736     1736       A2         0
+                intcode_body                       10AC     10AC       DA         0
+                text51                             1C46     1C46       68         0
+                text50                             17D8     17D8       A0         0
+                text49                             125A     125A       C0         0
+                text48                             2186     2186       10         0
+                text47                             203E     203E       22         0
+                text46                              9AE      9AE      162         0
+                text45                             1DB6     1DB6       4A         0
+                text44                             1E7C     1E7C       3E         0
+                text43                             1E3E     1E3E       3E         0
+                text42                             1FEE     1FEE       2E         0
+                text41                             1FC0     1FC0       2E         0
+                text40                             1F92     1F92       2E         0
+                text39                              ED4      ED4       F4         0
+                text38                             1186     1186       D4         0
+                text37                              41A      41A      2E2         0
+                text36                              6FC      6FC      2B2         0
+                text35                             2164     2164       12         0
+                text34                              DA4      DA4      130         0
+                text33                             1CAE     1CAE       62         0
+                text32                             1A34     1A34       8C         0
+                text31                             1692     1692       A4         0
+                text30                             19A8     19A8       8C         0
+                text29                             1B48     1B48       82         0
+                text28                             1D10     1D10       54         0
+                text27                             1AC0     1AC0       88         0
+                text26                             1EBA     1EBA       3A         0
+                text25                             20A4     20A4       20         0
+                text24                             2196     2196        E         0
+                text23                             15E2     15E2       B0         0
+                text22                             211E     211E       1E         0
+                text21                             1532     1532       B0         0
+                text20                             2100     2100       1E         0
+                text19                             1482     1482       B0         0
+                text18                             20E2     20E2       1E         0
+                text17                             13D2     13D2       B0         0
+                text16                             20C4     20C4       1E         0
+                text15                              FC8      FC8       E4         0
+                text14                             21C0     21C0        6         0
+                text13                             2176     2176       10         0
+                text12                             21A4     21A4        C         0
+                text11                             1D64     1D64       52         0
+                text10                             1BCA     1BCA       7C         0
+                text9                              1E00     1E00       3E         0
+                text8                              1916     1916       92         0
+                text7                              213C     213C       16         0
+                text6                               B10      B10      152         0
+                text5                              2152     2152       12         0
+                text4                              131A     131A       B8         0
+                text3                              201C     201C       22         0
+                text2                               C62      C62      142         0
+                text1                              1878     1878       9E         0
+                text0                                A6       A6      374         0
+                cinit                              1F62     1F62       30         0
+                idataCOMRAM                        21C6     21C6        1         0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+
+        CLASS   MEDIUMCONST    
+                mediumconst                        FDE2     FDE2      21E         0
+
+        CLASS   COMRAM         
+                cstackCOMRAM                          1        1       29         1
+                dataCOMRAM                           3A       3A        1         1
+                bssCOMRAM                            2A       2A       10         1
+
+        CLASS   ABS1           
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+                cstackBANK0                          BF       BF       29         1
+                bssBANK0                             60       60       5F         1
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   BANK8          
+
+        CLASS   BANK9          
+
+        CLASS   BANK10         
+
+        CLASS   BANK11         
+
+        CLASS   BANK12         
+
+        CLASS   BANK13         
+
+        CLASS   BANK14         
+
+        CLASS   BANK15         
+
+        CLASS   SFR            
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+                config                           300000   300000        E         0
+
+        CLASS   IDLOC          
+                idloc                            200000   200000        8         0
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+                reset_vec                      000000  000004  000004         0       0  CODE    
+                cstackCOMRAM                   000001  00003A  00003B         1       1  COMRAM  
+                intcode                        000008  000010  000018         4       0  CODE    
+                intcodelo                      000018  0021AF  0021C7         C       0  CODE    
+                bssBANK0                       000060  000088  0000E8        60       1  BANK0   
+                mediumconst                    00FDE2  00021E  010000      7EF1       0  MEDIUMCO
+                idloc                          200000  000008  200008    200000       0  IDLOC   
+                config                         300000  00000E  30000E    300000       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0000E8-0000FF               18
+        BANK1            000100-0001FF              100
+        BANK10           000A00-000AFF              100
+        BANK11           000B00-000BFF              100
+        BANK12           000C00-000CFF              100
+        BANK13           000D00-000DFF              100
+        BANK14           000E00-000EFF              100
+        BANK15           000F00-000F37               38
+        BANK2            000200-0002FF              100
+        BANK3            000300-0003FF              100
+        BANK4            000400-0004FF              100
+        BANK5            000500-0005FF              100
+        BANK6            000600-0006FF              100
+        BANK7            000700-0007FF              100
+        BANK8            000800-0008FF              100
+        BANK9            000900-0009FF              100
+        BIGRAM           00003B-00005F               25
+                         0000E8-000F37              E50
+        CODE             000004-000007                4
+                         0021C7-00FDE1             DC1B
+        COMRAM           00003B-00005F               25
+        CONST            000004-000007                4
+                         0021C7-00FDE1             DC1B
+        EEDATA           F00000-F003FF              400
+        MEDIUMCONST      0021C7-00FDE1             DC1B
+        RAM              0000E8-000F37              100
+        SFR              000F38-000FFF               28
+        SMALLCONST       0021C7-00FDE1              100
+
+                                  Symbol Table
+
+?___lwdiv                     cstackBANK0  0000BF
+?___lwmod                     cstackBANK0  0000C7
+?___wmul                      cstackBANK0  0000BF
+?_abval                       cstackCOMRAM 000012
+?_atoi                        cstackBANK0  0000C5
+?_beep                        cstackBANK0  0000BF
+?_beep_message                cstackBANK0  0000C5
+?_cgets                       cstackBANK0  0000C1
+?_gets                        cstackBANK0  0000CA
+?_isdigit                     cstackBANK0  0000BF
+?_message                     cstackBANK0  0000C9
+?_motor_left_power            cstackBANK0  0000BF
+?_motor_right_power           cstackBANK0  0000BF
+?_motor_set_target            cstackBANK0  0000C1
+?_p_front                     cstackBANK0  0000C9
+?_p_lb                        cstackBANK0  0000C9
+?_p_lf                        cstackBANK0  0000C9
+?_p_right                     cstackBANK0  0000C9
+?_ping_convert                cstackBANK0  0000C7
+?_ping_front                  cstackBANK0  0000CF
+?_ping_lb                     cstackBANK0  0000CF
+?_ping_lf                     cstackBANK0  0000CF
+?_ping_right                  cstackBANK0  0000CF
+?_printf                      cstackBANK0  0000CD
+?_putch                       cstackBANK0  0000BF
+?_stop_sonic_timer            cstackBANK0  0000BF
+?_strcmp                      cstackBANK0  0000BF
+?_sys_delay_ms                cstackBANK0  0000BF
+_ANSELA                       (abs)        000F38
+_ANSELB                       (abs)        000F39
+_ANSELC                       (abs)        000F3A
+_ANSELD                       (abs)        000F3B
+_ANSELE                       (abs)        000F3C
+_CREN1                        (abs)        007D5C
+_ConfigureOscillator          text7        00213C
+_GIE                          (abs)        007F97
+_IRCF0                        (abs)        007E9C
+_IRCF1                        (abs)        007E9D
+_IRCF2                        (abs)        007E9E
+_InitApp                      text8        001916
+_OSCCON2bits                  (abs)        000FD2
+_OSCTUNEbits                  (abs)        000F9B
+_PEIE                         (abs)        007F96
+_PORTA                        (abs)        000F80
+_PORTAbits                    (abs)        000F80
+_PORTB                        (abs)        000F81
+_PORTBbits                    (abs)        000F81
+_PORTC                        (abs)        000F82
+_PORTCbits                    (abs)        000F82
+_PORTD                        (abs)        000F83
+_PORTDbits                    (abs)        000F83
+_PORTE                        (abs)        000F84
+_PORTEbits                    (abs)        000F84
+_PSA                          (abs)        007EAB
+_RC1IF                        (abs)        007CF5
+_RCREG1                       (abs)        000FAE
+_SPBRG1                       (abs)        000FAF
+_SPEN1                        (abs)        007D5F
+_T08BIT                       (abs)        007EAE
+_T0CS                         (abs)        007EAD
+_T0PS0                        (abs)        007EA8
+_T0PS1                        (abs)        007EA9
+_T0PS2                        (abs)        007EAA
+_T2CKPS0                      (abs)        007DD0
+_T2CKPS1                      (abs)        007DD1
+_TMR0H                        (abs)        000FD7
+_TMR0L                        (abs)        000FD6
+_TMR0ON                       (abs)        007EAF
+_TMR1H                        (abs)        000FCF
+_TMR1IE                       (abs)        007CE8
+_TMR1IF                       (abs)        007CF0
+_TMR1L                        (abs)        000FCE
+_TMR1ON                       (abs)        007E68
+_TMR2IE                       (abs)        007CE9
+_TMR2IF                       (abs)        007CF1
+_TMR2ON                       (abs)        007DD2
+_TRISA                        (abs)        000F92
+_TRISB                        (abs)        000F93
+_TRISC                        (abs)        000F94
+_TRISD                        (abs)        000F95
+_TRISE                        (abs)        000F96
+_TRMT1                        (abs)        007D61
+_TXEN1                        (abs)        007D65
+_TXREG                        (abs)        000FAD
+__CFG_BOREN$SBORDIS           (abs)        000000
+__CFG_BORV$285                (abs)        000000
+__CFG_CCP2MX$PORTC1           (abs)        000000
+__CFG_CCP3MX$PORTB5           (abs)        000000
+__CFG_CP0$OFF                 (abs)        000000
+__CFG_CP1$OFF                 (abs)        000000
+__CFG_CP2$OFF                 (abs)        000000
+__CFG_CP3$OFF                 (abs)        000000
+__CFG_CPB$OFF                 (abs)        000000
+__CFG_CPD$OFF                 (abs)        000000
+__CFG_EBTR0$OFF               (abs)        000000
+__CFG_EBTR1$OFF               (abs)        000000
+__CFG_EBTR2$OFF               (abs)        000000
+__CFG_EBTR3$OFF               (abs)        000000
+__CFG_EBTRB$OFF               (abs)        000000
+__CFG_FCMEN$OFF               (abs)        000000
+__CFG_FOSC$INTIO67            (abs)        000000
+__CFG_HFOFST$ON               (abs)        000000
+__CFG_IESO$OFF                (abs)        000000
+__CFG_LVP$ON                  (abs)        000000
+__CFG_MCLRE$EXTMCLR           (abs)        000000
+__CFG_P2BMX$PORTD2            (abs)        000000
+__CFG_PBADEN$ON               (abs)        000000
+__CFG_PLLCFG$OFF              (abs)        000000
+__CFG_PRICLKEN$OFF            (abs)        000000
+__CFG_PWRTEN$OFF              (abs)        000000
+__CFG_STVREN$ON               (abs)        000000
+__CFG_T3CMX$PORTC0            (abs)        000000
+__CFG_WDTEN$OFF               (abs)        000000
+__CFG_WDTPS$32768             (abs)        000000
+__CFG_WRT0$OFF                (abs)        000000
+__CFG_WRT1$OFF                (abs)        000000
+__CFG_WRT2$OFF                (abs)        000000
+__CFG_WRT3$OFF                (abs)        000000
+__CFG_WRTB$OFF                (abs)        000000
+__CFG_WRTC$OFF                (abs)        000000
+__CFG_WRTD$OFF                (abs)        000000
+__CFG_XINST$OFF               (abs)        000000
+__HRAM                        (abs)        000000
+__Habs1                       abs1         000000
+__Hbank0                      bank0        000000
+__Hbank1                      bank1        000000
+__Hbank10                     bank10       000000
+__Hbank11                     bank11       000000
+__Hbank12                     bank12       000000
+__Hbank13                     bank13       000000
+__Hbank14                     bank14       000000
+__Hbank15                     bank15       000000
+__Hbank2                      bank2        000000
+__Hbank3                      bank3        000000
+__Hbank4                      bank4        000000
+__Hbank5                      bank5        000000
+__Hbank6                      bank6        000000
+__Hbank7                      bank7        000000
+__Hbank8                      bank8        000000
+__Hbank9                      bank9        000000
+__Hbigbss                     bigbss       000000
+__Hbigdata                    bigdata      000000
+__Hbigram                     bigram       000000
+__Hbss                        bss          000000
+__HbssBANK0                   bssBANK0     000000
+__HbssCOMRAM                  bssCOMRAM    000000
+__Hcinit                      cinit        000000
+__Hclrtext                    clrtext      000000
+__Hcomram                     comram       000000
+__Hconfig                     config       30000E
+__Hconst                      const        000000
+__HcstackBANK0                cstackBANK0  000000
+__HcstackCOMRAM               cstackCOMRAM 000000
+__Hdata                       data         000000
+__HdataCOMRAM                 dataCOMRAM   000000
+__Heeprom_data                eeprom_data  000000
+__Hend_init                   end_init     0000A6
+__Hfarbss                     farbss       000000
+__Hfardata                    fardata      000000
+__Hibigdata                   ibigdata     000000
+__Hidata                      idata        000000
+__HidataCOMRAM                idataCOMRAM  000000
+__Hidloc                      idloc        200008
+__Hifardata                   ifardata     000000
+__Hinit                       init         0000A2
+__Hintcode                    intcode      000018
+__Hintcode_body               intcode_body 000000
+__Hintcodelo                  intcodelo    0000A2
+__Hintentry                   intentry     000000
+__Hintret                     intret       000000
+__Hintsave_regs               intsave_regs 000000
+__Hirdata                     irdata       000000
+__Hmediumconst                mediumconst  010000
+__Hnvbit                      nvbit        000000
+__Hnvrram                     nvrram       000000
+__Hparam                      rparam       000000
+__Hpowerup                    powerup      0000A2
+__Hram                        ram          000000
+__Hramtop                     ramtop       001000
+__Hrbit                       rbit         000000
+__Hrbss                       rbss         000000
+__Hrdata                      rdata        000000
+__Hreset_vec                  reset_vec    000004
+__Hrparam                     rparam       000000
+__Hsfr                        sfr          000000
+__Hsmallconst                 smallconst   000000
+__Hstruct                     struct       000000
+__Htemp                       temp         000000
+__Htext                       text         000000
+__Htext0                      text0        000000
+__Htext1                      text1        000000
+__Htext10                     text10       000000
+__Htext11                     text11       000000
+__Htext12                     text12       000000
+__Htext13                     text13       000000
+__Htext14                     text14       000000
+__Htext15                     text15       000000
+__Htext16                     text16       000000
+__Htext17                     text17       000000
+__Htext18                     text18       000000
+__Htext19                     text19       000000
+__Htext2                      text2        000000
+__Htext20                     text20       000000
+__Htext21                     text21       000000
+__Htext22                     text22       000000
+__Htext23                     text23       000000
+__Htext24                     text24       000000
+__Htext25                     text25       000000
+__Htext26                     text26       000000
+__Htext27                     text27       000000
+__Htext28                     text28       000000
+__Htext29                     text29       000000
+__Htext3                      text3        000000
+__Htext30                     text30       000000
+__Htext31                     text31       000000
+__Htext32                     text32       000000
+__Htext33                     text33       000000
+__Htext34                     text34       000000
+__Htext35                     text35       000000
+__Htext36                     text36       000000
+__Htext37                     text37       000000
+__Htext38                     text38       000000
+__Htext39                     text39       000000
+__Htext4                      text4        000000
+__Htext40                     text40       000000
+__Htext41                     text41       000000
+__Htext42                     text42       000000
+__Htext43                     text43       000000
+__Htext44                     text44       000000
+__Htext45                     text45       000000
+__Htext46                     text46       000000
+__Htext47                     text47       000000
+__Htext48                     text48       000000
+__Htext49                     text49       000000
+__Htext5                      text5        000000
+__Htext50                     text50       000000
+__Htext51                     text51       000000
+__Htext54                     text54       000000
+__Htext55                     text55       000000
+__Htext56                     text56       000000
+__Htext57                     text57       000000
+__Htext58                     text58       000000
+__Htext59                     text59       000000
+__Htext6                      text6        000000
+__Htext60                     text60       000000
+__Htext7                      text7        000000
+__Htext8                      text8        000000
+__Htext9                      text9        000000
+__LRAM                        (abs)        000001
+__Labs1                       abs1         000000
+__Lbank0                      bank0        000000
+__Lbank1                      bank1        000000
+__Lbank10                     bank10       000000
+__Lbank11                     bank11       000000
+__Lbank12                     bank12       000000
+__Lbank13                     bank13       000000
+__Lbank14                     bank14       000000
+__Lbank15                     bank15       000000
+__Lbank2                      bank2        000000
+__Lbank3                      bank3        000000
+__Lbank4                      bank4        000000
+__Lbank5                      bank5        000000
+__Lbank6                      bank6        000000
+__Lbank7                      bank7        000000
+__Lbank8                      bank8        000000
+__Lbank9                      bank9        000000
+__Lbigbss                     bigbss       000000
+__Lbigdata                    bigdata      000000
+__Lbigram                     bigram       000000
+__Lbss                        bss          000000
+__LbssBANK0                   bssBANK0     000000
+__LbssCOMRAM                  bssCOMRAM    000000
+__Lcinit                      cinit        000000
+__Lclrtext                    clrtext      000000
+__Lcomram                     comram       000000
+__Lconfig                     config       300000
+__Lconst                      const        000000
+__LcstackBANK0                cstackBANK0  000000
+__LcstackCOMRAM               cstackCOMRAM 000000
+__Ldata                       data         000000
+__LdataCOMRAM                 dataCOMRAM   000000
+__Leeprom_data                eeprom_data  000000
+__Lend_init                   end_init     0000A2
+__Lfarbss                     farbss       000000
+__Lfardata                    fardata      000000
+__Libigdata                   ibigdata     000000
+__Lidata                      idata        000000
+__LidataCOMRAM                idataCOMRAM  000000
+__Lidloc                      idloc        200000
+__Lifardata                   ifardata     000000
+__Linit                       init         0000A2
+__Lintcode                    intcode      000008
+__Lintcode_body               intcode_body 000000
+__Lintcodelo                  intcodelo    000018
+__Lintentry                   intentry     000000
+__Lintret                     intret       000000
+__Lintsave_regs               intsave_regs 000000
+__Lirdata                     irdata       000000
+__Lmediumconst                mediumconst  00FDE2
+__Lnvbit                      nvbit        000000
+__Lnvrram                     nvrram       000000
+__Lparam                      rparam       000000
+__Lpowerup                    powerup      0000A2
+__Lram                        ram          000000
+__Lramtop                     ramtop       001000
+__Lrbit                       rbit         000000
+__Lrbss                       rbss         000000
+__Lrdata                      rdata        000000
+__Lreset_vec                  reset_vec    000000
+__Lrparam                     rparam       000000
+__Lsfr                        sfr          000000
+__Lsmallconst                 smallconst   000000
+__Lstruct                     struct       000000
+__Ltemp                       temp         000000
+__Ltext                       text         000000
+__Ltext0                      text0        000000
+__Ltext1                      text1        000000
+__Ltext10                     text10       000000
+__Ltext11                     text11       000000
+__Ltext12                     text12       000000
+__Ltext13                     text13       000000
+__Ltext14                     text14       000000
+__Ltext15                     text15       000000
+__Ltext16                     text16       000000
+__Ltext17                     text17       000000
+__Ltext18                     text18       000000
+__Ltext19                     text19       000000
+__Ltext2                      text2        000000
+__Ltext20                     text20       000000
+__Ltext21                     text21       000000
+__Ltext22                     text22       000000
+__Ltext23                     text23       000000
+__Ltext24                     text24       000000
+__Ltext25                     text25       000000
+__Ltext26                     text26       000000
+__Ltext27                     text27       000000
+__Ltext28                     text28       000000
+__Ltext29                     text29       000000
+__Ltext3                      text3        000000
+__Ltext30                     text30       000000
+__Ltext31                     text31       000000
+__Ltext32                     text32       000000
+__Ltext33                     text33       000000
+__Ltext34                     text34       000000
+__Ltext35                     text35       000000
+__Ltext36                     text36       000000
+__Ltext37                     text37       000000
+__Ltext38                     text38       000000
+__Ltext39                     text39       000000
+__Ltext4                      text4        000000
+__Ltext40                     text40       000000
+__Ltext41                     text41       000000
+__Ltext42                     text42       000000
+__Ltext43                     text43       000000
+__Ltext44                     text44       000000
+__Ltext45                     text45       000000
+__Ltext46                     text46       000000
+__Ltext47                     text47       000000
+__Ltext48                     text48       000000
+__Ltext49                     text49       000000
+__Ltext5                      text5        000000
+__Ltext50                     text50       000000
+__Ltext51                     text51       000000
+__Ltext54                     text54       000000
+__Ltext55                     text55       000000
+__Ltext56                     text56       000000
+__Ltext57                     text57       000000
+__Ltext58                     text58       000000
+__Ltext59                     text59       000000
+__Ltext6                      text6        000000
+__Ltext60                     text60       000000
+__Ltext7                      text7        000000
+__Ltext8                      text8        000000
+__Ltext9                      text9        000000
+__S0                          (abs)        30000E
+__S1                          (abs)        0000E8
+___lwdiv                      text49       00125A
+___lwdiv@counter              cstackBANK0  0000C4
+___lwdiv@dividend             cstackBANK0  0000BF
+___lwdiv@divisor              cstackBANK0  0000C1
+___lwdiv@quotient             cstackBANK0  0000C5
+___lwmod                      text50       0017D8
+___lwmod@counter              cstackBANK0  0000CC
+___lwmod@dividend             cstackBANK0  0000C7
+___lwmod@divisor              cstackBANK0  0000C9
+___wmul                       text51       001C46
+___wmul@multiplicand          cstackBANK0  0000C1
+___wmul@multiplier            cstackBANK0  0000BF
+___wmul@product               cstackBANK0  0000C3
+__accesstop                   (abs)        000060
+__activetblptr                (abs)        000003
+__end_of_ConfigureOscillator  text7        002152
+__end_of_InitApp              text8        0019A8
+__end_of___lwdiv              text49       00131A
+__end_of___lwmod              text50       001878
+__end_of___wmul               text51       001CAE
+__end_of__initialization      cinit        001F8C
+__end_of__stringdata          mediumconst  00FFFE
+__end_of_abval                text60       001F62
+__end_of_atoi                 text6        000C62
+__end_of_beep                 text30       001A34
+__end_of_beep_message         text29       001BCA
+__end_of_branching            text32       001AC0
+__end_of_center_close         text41       001FEE
+__end_of_center_open          text42       00201C
+__end_of_center_straight      text40       001FC0
+__end_of_centering            text27       001B48
+__end_of_centering_angle      text38       00125A
+__end_of_centering_state      text39       000FC8
+__end_of_cgets                text46       000B10
+__end_of_collect_sensor_data  text15       0010AC
+__end_of_dpowers              mediumconst  00FDEC
+__end_of_encoder_test         text3        00203E
+__end_of_getche               text47       002060
+__end_of_gets                 text5        002164
+__end_of_high_isr             intcode_body 001186
+__end_of_init_motor_timer     text14       0021C6
+__end_of_init_sonic_timer     text13       002186
+__end_of_init_uart            text12       0021B0
+__end_of_is_branch            text31       001736
+__end_of_isdigit              text45       001E00
+__end_of_left_off             text57       0021B8
+__end_of_left_on              text56       002082
+__end_of_low_isr              intcodelo    0000A2
+__end_of_main                 text0        00041A
+__end_of_maze_debug           text36       0009AE
+__end_of_maze_loop            text9        001E3E
+__end_of_message              text28       001D64
+__end_of_motor_enc_clear      text35       002176
+__end_of_motor_enc_interupt   text55       001F2C
+__end_of_motor_interupt       text54       0017D8
+__end_of_motor_left_power     text43       001E7C
+__end_of_motor_right_power    text44       001EBA
+__end_of_motor_set_target     text34       000ED4
+__end_of_p_front              text17       001482
+__end_of_p_lb                 text21       0015E2
+__end_of_p_lf                 text19       001532
+__end_of_p_right              text23       001692
+__end_of_ping_convert         text26       001EF4
+__end_of_ping_front           text16       0020E2
+__end_of_ping_lb              text20       00211E
+__end_of_ping_lf              text18       002100
+__end_of_ping_right           text22       00213C
+__end_of_printf               text37       0006FC
+__end_of_putch                text48       002196
+__end_of_right_off            text59       0021C0
+__end_of_right_on             text58       0020A4
+__end_of_set_power            text1        001916
+__end_of_sonic_test           text11       001DB6
+__end_of_start_sonic_timer    text24       0021A4
+__end_of_stop_sonic_timer     text25       0020C4
+__end_of_strcmp               text10       001C46
+__end_of_sys_delay_ms         text33       001D10
+__end_of_time_turn_test       text2        000DA4
+__end_of_turn_enc_test        text4        0013D2
+__initialization              cinit        001F62
+__mediumconst                 mediumconst  00FDE2
+__pbssBANK0                   bssBANK0     000060
+__pbssCOMRAM                  bssCOMRAM    00002A
+__pcinit                      cinit        001F62
+__pcstackBANK0                cstackBANK0  0000BF
+__pcstackCOMRAM               cstackCOMRAM 000001
+__pdataCOMRAM                 dataCOMRAM   00003A
+__pidataCOMRAM                idataCOMRAM  0021C6
+__pintcode                    intcode      000008
+__pintcode_body               intcode_body 0010AC
+__pintcodelo                  intcodelo    000018
+__pmediumconst                mediumconst  00FDE2
+__ptext0                      text0        0000A6
+__ptext1                      text1        001878
+__ptext10                     text10       001BCA
+__ptext11                     text11       001D64
+__ptext12                     text12       0021A4
+__ptext13                     text13       002176
+__ptext14                     text14       0021C0
+__ptext15                     text15       000FC8
+__ptext16                     text16       0020C4
+__ptext17                     text17       0013D2
+__ptext18                     text18       0020E2
+__ptext19                     text19       001482
+__ptext2                      text2        000C62
+__ptext20                     text20       002100
+__ptext21                     text21       001532
+__ptext22                     text22       00211E
+__ptext23                     text23       0015E2
+__ptext24                     text24       002196
+__ptext25                     text25       0020A4
+__ptext26                     text26       001EBA
+__ptext27                     text27       001AC0
+__ptext28                     text28       001D10
+__ptext29                     text29       001B48
+__ptext3                      text3        00201C
+__ptext30                     text30       0019A8
+__ptext31                     text31       001692
+__ptext32                     text32       001A34
+__ptext33                     text33       001CAE
+__ptext34                     text34       000DA4
+__ptext35                     text35       002164
+__ptext36                     text36       0006FC
+__ptext37                     text37       00041A
+__ptext38                     text38       001186
+__ptext39                     text39       000ED4
+__ptext4                      text4        00131A
+__ptext40                     text40       001F92
+__ptext41                     text41       001FC0
+__ptext42                     text42       001FEE
+__ptext43                     text43       001E3E
+__ptext44                     text44       001E7C
+__ptext45                     text45       001DB6
+__ptext46                     text46       0009AE
+__ptext47                     text47       00203E
+__ptext48                     text48       002186
+__ptext49                     text49       00125A
+__ptext5                      text5        002152
+__ptext50                     text50       0017D8
+__ptext51                     text51       001C46
+__ptext54                     text54       001736
+__ptext55                     text55       001EF4
+__ptext56                     text56       002060
+__ptext57                     text57       0021B0
+__ptext58                     text58       002082
+__ptext59                     text59       0021B8
+__ptext6                      text6        000B10
+__ptext60                     text60       001F2C
+__ptext7                      text7        00213C
+__ptext8                      text8        001916
+__ptext9                      text9        001E00
+__ramtop                      ramtop       001000
+__size_of_ConfigureOscillator (abs)        000000
+__size_of_InitApp             (abs)        000000
+__size_of___lwdiv             (abs)        000000
+__size_of___lwmod             (abs)        000000
+__size_of___wmul              (abs)        000000
+__size_of_abval               (abs)        000000
+__size_of_atoi                (abs)        000000
+__size_of_beep                (abs)        000000
+__size_of_beep_message        (abs)        000000
+__size_of_branching           (abs)        000000
+__size_of_center_close        (abs)        000000
+__size_of_center_open         (abs)        000000
+__size_of_center_straight     (abs)        000000
+__size_of_centering           (abs)        000000
+__size_of_centering_angle     (abs)        000000
+__size_of_centering_state     (abs)        000000
+__size_of_cgets               (abs)        000000
+__size_of_collect_sensor_data (abs)        000000
+__size_of_encoder_test        (abs)        000000
+__size_of_getche              (abs)        000000
+__size_of_gets                (abs)        000000
+__size_of_high_isr            (abs)        000000
+__size_of_init_motor_timer    (abs)        000000
+__size_of_init_sonic_timer    (abs)        000000
+__size_of_init_uart           (abs)        000000
+__size_of_is_branch           (abs)        000000
+__size_of_isdigit             (abs)        000000
+__size_of_left_off            (abs)        000000
+__size_of_left_on             (abs)        000000
+__size_of_low_isr             (abs)        000000
+__size_of_main                (abs)        000000
+__size_of_maze_debug          (abs)        000000
+__size_of_maze_loop           (abs)        000000
+__size_of_message             (abs)        000000
+__size_of_motor_enc_clear     (abs)        000000
+__size_of_motor_enc_interupt  (abs)        000000
+__size_of_motor_interupt      (abs)        000000
+__size_of_motor_left_power    (abs)        000000
+__size_of_motor_right_power   (abs)        000000
+__size_of_motor_set_target    (abs)        000000
+__size_of_p_front             (abs)        000000
+__size_of_p_lb                (abs)        000000
+__size_of_p_lf                (abs)        000000
+__size_of_p_right             (abs)        000000
+__size_of_ping_convert        (abs)        000000
+__size_of_ping_front          (abs)        000000
+__size_of_ping_lb             (abs)        000000
+__size_of_ping_lf             (abs)        000000
+__size_of_ping_right          (abs)        000000
+__size_of_printf              (abs)        000000
+__size_of_putch               (abs)        000000
+__size_of_right_off           (abs)        000000
+__size_of_right_on            (abs)        000000
+__size_of_set_power           (abs)        000000
+__size_of_sonic_test          (abs)        000000
+__size_of_start_sonic_timer   (abs)        000000
+__size_of_stop_sonic_timer    (abs)        000000
+__size_of_strcmp              (abs)        000000
+__size_of_sys_delay_ms        (abs)        000000
+__size_of_time_turn_test      (abs)        000000
+__size_of_turn_enc_test       (abs)        000000
+__smallconst                  smallconst   000000
+__stringdata                  mediumconst  00FDEC
+_abval                        text60       001F2C
+_abval$1418                   cstackCOMRAM 000015
+_atoi                         text6        000B10
+_beep                         text30       0019A8
+_beep_message                 text29       001B48
+_branching                    text32       001A34
+_buf                          bssBANK0     00006F
+_center_close                 text41       001FC0
+_center_open                  text42       001FEE
+_center_straight              text40       001F92
+_centering                    text27       001AC0
+_centering_angle              text38       001186
+_centering_state              text39       000ED4
+_cgets                        text46       0009AE
+_collect_sensor_data          text15       000FC8
+_dpowers                      mediumconst  00FDE2
+_encoder_test                 text3        00201C
+_getche                       text47       00203E
+_gets                         text5        002152
+_high_isr                     intcode      000008
+_init_motor_timer             text14       0021C0
+_init_sonic_timer             text13       002176
+_init_uart                    text12       0021A4
+_is_branch                    text31       001692
+_isdigit                      text45       001DB6
+_isdigit$1865                 cstackBANK0  0000C1
+_left_off                     text57       0021B0
+_left_on                      text56       002060
+_low_isr                      intcodelo    000018
+_main                         text0        0000A6
+_maze                         bssBANK0     000060
+_maze_debug                   text36       0006FC
+_maze_loop                    text9        001E00
+_message                      text28       001D10
+_motor                        bssCOMRAM    00002A
+_motor_enc_clear              text35       002164
+_motor_enc_interupt           text55       001EF4
+_motor_interupt               text54       001736
+_motor_left_power             text43       001E3E
+_motor_right_power            text44       001E7C
+_motor_set_target             text34       000DA4
+_p_front                      text17       0013D2
+_p_lb                         text21       001532
+_p_lf                         text19       001482
+_p_right                      text23       0015E2
+_ping_convert                 text26       001EBA
+_ping_front                   text16       0020C4
+_ping_lb                      text20       002100
+_ping_lf                      text18       0020E2
+_ping_right                   text22       00211E
+_printf                       text37       00041A
+_putch                        text48       002186
+_right_off                    text59       0021B8
+_right_on                     text58       002082
+_set_power                    text1        001878
+_sonic_test                   text11       001D64
+_start_sonic_timer            text24       002196
+_stop_sonic_timer             text25       0020A4
+_strcmp                       text10       001BCA
+_sys_delay_ms                 text33       001CAE
+_systick                      bssCOMRAM    000030
+_time_turn_test               text2        000C62
+_turn_enc_test                text4        00131A
+abval@val                     cstackCOMRAM 000012
+atoi@a                        cstackBANK0  0000CB
+atoi@s                        cstackBANK0  0000C5
+atoi@sign                     cstackBANK0  0000CA
+beep@i                        cstackBANK0  0000C4
+beep@j                        cstackBANK0  0000C3
+beep@tone                     cstackBANK0  0000BF
+beep_message@c                cstackBANK0  0000C7
+beep_message@i                cstackBANK0  0000C8
+beep_message@m                cstackBANK0  0000C5
+centering@state               cstackBANK0  0000CE
+centering_state@dist_close    cstackBANK0  0000C0
+centering_state@dist_far      cstackBANK0  0000C1
+cgets@c                       cstackBANK0  0000C6
+cgets@s                       cstackBANK0  0000C1
+cgets@s1                      cstackBANK0  0000C8
+end_of_initialization         cinit        001F8C
+getche@value                  cstackBANK0  0000C0
+gets@s                        cstackBANK0  0000CA
+high_isr@i                    bssCOMRAM    000034
+int_func                      intcode_body 0010AC
+intlevel0                     text         000000
+intlevel1                     text         000000
+intlevel2                     text         000000
+intlevel3                     text         000000
+is_branch@grace               dataCOMRAM   00003A
+isdigit@c                     cstackBANK0  0000BF
+main@i                        cstackBANK0  0000E6
+maze_debug@i                  bssBANK0     00006E
+message@m                     cstackBANK0  0000C9
+message@pl                    cstackBANK0  0000CB
+message@pr                    cstackBANK0  0000CC
+motor_enc_interupt@left       bssCOMRAM    000036
+motor_enc_interupt@right      bssCOMRAM    000037
+motor_interupt@left_counter   bssCOMRAM    000038
+motor_interupt@right_counter  bssCOMRAM    000039
+motor_left_power@p            cstackBANK0  0000BF
+motor_right_power@p           cstackBANK0  0000BF
+motor_set_target@left         cstackBANK0  0000C1
+motor_set_target@old_left     cstackBANK0  0000C6
+motor_set_target@old_right    cstackBANK0  0000C7
+motor_set_target@right        cstackBANK0  0000C3
+p_front@i                     cstackBANK0  0000CD
+p_front@value                 cstackBANK0  0000CB
+p_lb@i                        cstackBANK0  0000CD
+p_lb@value                    cstackBANK0  0000CB
+p_lf@i                        cstackBANK0  0000CD
+p_lf@value                    cstackBANK0  0000CB
+p_right@i                     cstackBANK0  0000CD
+p_right@value                 cstackBANK0  0000CB
+ping_convert@value            cstackBANK0  0000C7
+ping_front@value              cstackBANK0  0000D1
+ping_lb@value                 cstackBANK0  0000D1
+ping_lf@value                 cstackBANK0  0000D1
+ping_right@value              cstackBANK0  0000D1
+printf@_val                   cstackBANK0  0000D9
+printf@ap                     cstackBANK0  0000D7
+printf@c                      cstackBANK0  0000DD
+printf@f                      cstackBANK0  0000CD
+printf@flag                   cstackBANK0  0000D5
+printf@prec                   cstackBANK0  0000D6
+putch@c                       cstackBANK0  0000BF
+set_power@power               cstackBANK0  0000DE
+sonic_test@i                  cstackBANK0  0000D4
+start                         init         0000A2
+start_initialization          cinit        001F62
+stop_sonic_timer@value        cstackBANK0  0000C1
+strcmp@r                      cstackBANK0  0000C4
+strcmp@s1                     cstackBANK0  0000BF
+strcmp@s2                     cstackBANK0  0000C1
+sys_delay_ms@old              cstackBANK0  0000C3
+sys_delay_ms@ticks            cstackBANK0  0000BF
+time_turn_test@i              cstackBANK0  0000E3
+time_turn_test@i_495          cstackBANK0  0000E4
+time_turn_test@time           cstackBANK0  0000E1
+turn_enc_test@left            cstackBANK0  0000DE
+turn_enc_test@right           cstackBANK0  0000E0
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 96 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               2   39[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, structret, tblptrl, tblptrh, tblptru, prodl, prodh, bsr, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels required when called:   10
+ This function calls:
+		_ConfigureOscillator
+		_InitApp
+		_beep
+		_printf
+		_maze_loop
+		_gets
+		_strcmp
+		_sonic_test
+		_turn_enc_test
+		_set_power
+		_time_turn_test
+		_encoder_test
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _set_power *****************
+ Defined at:
+		line 37 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  power           1   31[BANK0 ] char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_printf
+		_gets
+		_atoi
+		_motor_left_power
+		_motor_right_power
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _time_turn_test *****************
+ Defined at:
+		line 49 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1   37[BANK0 ] unsigned char 
+  i               1   36[BANK0 ] unsigned char 
+  time            2   34[BANK0 ] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       7       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_printf
+		_gets
+		_atoi
+		_motor_left_power
+		_motor_right_power
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _encoder_test *****************
+ Defined at:
+		line 70 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_sys_delay_ms
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _turn_enc_test *****************
+ Defined at:
+		line 76 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  right           2   33[BANK0 ] int 
+  left            2   31[BANK0 ] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_printf
+		_gets
+		_atoi
+		_motor_set_target
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _gets *****************
+ Defined at:
+		line 11 in file "/opt/microchip/xc8/v1.12/sources/gets.c"
+ Parameters:    Size  Location     Type
+  s               2   11[BANK0 ] PTR unsigned char 
+		 -> buf(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2   11[BANK0 ] PTR unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_cgets
+ This function is called by:
+		_set_power
+		_time_turn_test
+		_turn_enc_test
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _atoi *****************
+ Defined at:
+		line 6 in file "/opt/microchip/xc8/v1.12/sources/atoi.c"
+ Parameters:    Size  Location     Type
+  s               2    6[BANK0 ] PTR const unsigned char 
+		 -> buf(80), 
+ Auto vars:     Size  Location     Type
+  a               2   12[BANK0 ] int 
+  sign            1   11[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2    6[BANK0 ] int 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		___wmul
+		_isdigit
+ This function is called by:
+		_set_power
+		_time_turn_test
+		_turn_enc_test
+ This function uses a non-reentrant model
+
+
+ *************** function _ConfigureOscillator *****************
+ Defined at:
+		line 25 in file "system.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _InitApp *****************
+ Defined at:
+		line 33 in file "user.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_init_uart
+		_printf
+		_init_sonic_timer
+		_init_motor_timer
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _maze_loop *****************
+ Defined at:
+		line 36 in file "maze.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, structret, tblptrl, tblptrh, tblptru, prodl, prodh, bsr, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_collect_sensor_data
+		_centering
+		_is_branch
+		_branching
+		_maze_debug
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _strcmp *****************
+ Defined at:
+		line 34 in file "/opt/microchip/xc8/v1.12/sources/strcmp.c"
+ Parameters:    Size  Location     Type
+  s1              2    0[BANK0 ] PTR const unsigned char 
+		 -> buf(80), 
+  s2              2    2[BANK0 ] PTR const unsigned char 
+		 -> STR_29(2), STR_28(2), STR_27(2), STR_26(2), 
+		 -> STR_25(2), STR_24(2), 
+ Auto vars:     Size  Location     Type
+  r               1    5[BANK0 ] char 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] int 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _sonic_test *****************
+ Defined at:
+		line 167 in file "sonic.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1   21[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, structret, tblptrl, tblptrh, tblptru, prodl, prodh, bsr, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_ping_lf
+		_ping_lb
+		_ping_front
+		_ping_right
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _init_uart *****************
+ Defined at:
+		line 83 in file "user.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_InitApp
+ This function uses a non-reentrant model
+
+
+ *************** function _init_sonic_timer *****************
+ Defined at:
+		line 94 in file "user.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_InitApp
+ This function uses a non-reentrant model
+
+
+ *************** function _init_motor_timer *****************
+ Defined at:
+		line 128 in file "user.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_InitApp
+ This function uses a non-reentrant model
+
+
+ *************** function _collect_sensor_data *****************
+ Defined at:
+		line 100 in file "maze.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_ping_lf
+		_ping_front
+		_ping_lb
+		_ping_right
+ This function is called by:
+		_maze_loop
+ This function uses a non-reentrant model
+
+
+ *************** function _ping_front *****************
+ Defined at:
+		line 30 in file "sonic.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  value           2   18[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2   16[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_p_front
+ This function is called by:
+		_sonic_test
+		_collect_sensor_data
+ This function uses a non-reentrant model
+
+
+ *************** function _p_front *****************
+ Defined at:
+		line 40 in file "sonic.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               2   14[BANK0 ] unsigned int 
+  value           2   12[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2   10[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_start_sonic_timer
+		_stop_sonic_timer
+		_ping_convert
+ This function is called by:
+		_ping_front
+ This function uses a non-reentrant model
+
+
+ *************** function _ping_lf *****************
+ Defined at:
+		line 63 in file "sonic.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  value           2   18[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2   16[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_p_lf
+ This function is called by:
+		_sonic_test
+		_collect_sensor_data
+ This function uses a non-reentrant model
+
+
+ *************** function _p_lf *****************
+ Defined at:
+		line 73 in file "sonic.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               2   14[BANK0 ] unsigned int 
+  value           2   12[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2   10[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_start_sonic_timer
+		_stop_sonic_timer
+		_ping_convert
+ This function is called by:
+		_ping_lf
+ This function uses a non-reentrant model
+
+
+ *************** function _ping_lb *****************
+ Defined at:
+		line 99 in file "sonic.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  value           2   18[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2   16[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_p_lb
+ This function is called by:
+		_sonic_test
+		_collect_sensor_data
+ This function uses a non-reentrant model
+
+
+ *************** function _p_lb *****************
+ Defined at:
+		line 109 in file "sonic.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               2   14[BANK0 ] unsigned int 
+  value           2   12[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2   10[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_start_sonic_timer
+		_stop_sonic_timer
+		_ping_convert
+ This function is called by:
+		_ping_lb
+ This function uses a non-reentrant model
+
+
+ *************** function _ping_right *****************
+ Defined at:
+		line 133 in file "sonic.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  value           2   18[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2   16[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_p_right
+ This function is called by:
+		_sonic_test
+		_collect_sensor_data
+ This function uses a non-reentrant model
+
+
+ *************** function _p_right *****************
+ Defined at:
+		line 143 in file "sonic.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               2   14[BANK0 ] unsigned int 
+  value           2   12[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2   10[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_start_sonic_timer
+		_stop_sonic_timer
+		_ping_convert
+ This function is called by:
+		_ping_right
+ This function uses a non-reentrant model
+
+
+ *************** function _start_sonic_timer *****************
+ Defined at:
+		line 109 in file "user.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_p_front
+		_p_lf
+		_p_lb
+		_p_right
+ This function uses a non-reentrant model
+
+
+ *************** function _stop_sonic_timer *****************
+ Defined at:
+		line 120 in file "user.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  value           2    2[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_p_front
+		_p_lf
+		_p_lb
+		_p_right
+ This function uses a non-reentrant model
+
+
+ *************** function _ping_convert *****************
+ Defined at:
+		line 25 in file "sonic.c"
+ Parameters:    Size  Location     Type
+  value           2    8[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2    8[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		___lwdiv
+ This function is called by:
+		_p_front
+		_p_lf
+		_p_lb
+		_p_right
+ This function uses a non-reentrant model
+
+
+ *************** function _centering *****************
+ Defined at:
+		line 211 in file "maze.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  state           1   15[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_centering_angle
+		_centering_state
+		_center_straight
+		_center_open
+		_center_close
+		_message
+ This function is called by:
+		_maze_loop
+ This function uses a non-reentrant model
+
+
+ *************** function _message *****************
+ Defined at:
+		line 9 in file "maze.c"
+ Parameters:    Size  Location     Type
+  m               1   10[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  pr              1   13[BANK0 ] char 
+  pl              1   12[BANK0 ] char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_motor_left_power
+		_motor_right_power
+		_beep_message
+ This function is called by:
+		_centering
+ This function uses a non-reentrant model
+
+
+ *************** function _beep_message *****************
+ Defined at:
+		line 164 in file "user.c"
+ Parameters:    Size  Location     Type
+  m               1    6[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  i               1    9[BANK0 ] unsigned char 
+  c               1    8[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_beep
+ This function is called by:
+		_message
+ This function uses a non-reentrant model
+
+
+ *************** function _beep *****************
+ Defined at:
+		line 153 in file "user.c"
+ Parameters:    Size  Location     Type
+  tone            1    0[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  j               1    4[BANK0 ] unsigned char 
+  i               1    5[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+		_beep_message
+ This function uses a non-reentrant model
+
+
+ *************** function _is_branch *****************
+ Defined at:
+		line 267 in file "maze.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_maze_loop
+ This function uses a non-reentrant model
+
+
+ *************** function _branching *****************
+ Defined at:
+		line 300 in file "maze.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_sys_delay_ms
+		_motor_set_target
+ This function is called by:
+		_maze_loop
+ This function uses a non-reentrant model
+
+
+ *************** function _sys_delay_ms *****************
+ Defined at:
+		line 194 in file "user.c"
+ Parameters:    Size  Location     Type
+  ticks           4    0[BANK0 ] unsigned long 
+ Auto vars:     Size  Location     Type
+  old             4    4[BANK0 ] unsigned long 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_encoder_test
+		_branching
+ This function uses a non-reentrant model
+
+
+ *************** function _motor_set_target *****************
+ Defined at:
+		line 97 in file "motor.c"
+ Parameters:    Size  Location     Type
+  left            2    2[BANK0 ] int 
+  right           2    4[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+  old_right       1    8[BANK0 ] char 
+  old_left        1    7[BANK0 ] char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       7       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_motor_enc_clear
+		_motor_left_power
+		_motor_right_power
+ This function is called by:
+		_turn_enc_test
+		_branching
+ This function uses a non-reentrant model
+
+
+ *************** function _motor_enc_clear *****************
+ Defined at:
+		line 89 in file "motor.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_motor_set_target
+ This function uses a non-reentrant model
+
+
+ *************** function _maze_debug *****************
+ Defined at:
+		line 64 in file "maze.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_printf
+ This function is called by:
+		_maze_loop
+ This function uses a non-reentrant model
+
+
+ *************** function _printf *****************
+ Defined at:
+		line 465 in file "/opt/microchip/xc8/v1.12/sources/doprnt.c"
+ Parameters:    Size  Location     Type
+  f               2   14[BANK0 ] PTR const unsigned char 
+		 -> STR_65(11), STR_63(13), STR_61(10), STR_59(13), 
+		 -> STR_57(12), STR_55(10), STR_53(11), STR_51(12), 
+		 -> STR_49(10), STR_47(10), STR_45(10), STR_43(9), 
+		 -> STR_41(9), STR_39(3), STR_36(18), STR_33(7), 
+		 -> STR_30(18), STR_23(3), STR_21(18), STR_19(20), 
+		 -> STR_17(21), STR_15(19), STR_13(16), STR_11(53), 
+		 -> STR_9(37), STR_7(16), STR_6(37), STR_5(36), 
+		 -> STR_4(18), STR_2(19), STR_1(14), 
+ Auto vars:     Size  Location     Type
+  _val            4   26[BANK0 ] struct .
+  ap              2   24[BANK0 ] PTR void [1]
+		 -> ?_printf(2), 
+  c               1   30[BANK0 ] char 
+  prec            1   23[BANK0 ] char 
+  flag            1   22[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2   14[BANK0 ] int 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       9       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0      17       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       17 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_putch
+		___lwdiv
+		___lwmod
+ This function is called by:
+		_set_power
+		_time_turn_test
+		_turn_enc_test
+		_main
+		_InitApp
+		_maze_debug
+ This function uses a non-reentrant model
+
+
+ *************** function _centering_angle *****************
+ Defined at:
+		line 116 in file "maze.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_centering
+ This function uses a non-reentrant model
+
+
+ *************** function _centering_state *****************
+ Defined at:
+		line 153 in file "maze.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  dist_far        1    2[BANK0 ] const unsigned char 
+  dist_close      1    1[BANK0 ] const unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_centering
+ This function uses a non-reentrant model
+
+
+ *************** function _center_straight *****************
+ Defined at:
+		line 193 in file "maze.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_motor_left_power
+		_motor_right_power
+ This function is called by:
+		_centering
+ This function uses a non-reentrant model
+
+
+ *************** function _center_close *****************
+ Defined at:
+		line 199 in file "maze.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_motor_left_power
+		_motor_right_power
+ This function is called by:
+		_centering
+ This function uses a non-reentrant model
+
+
+ *************** function _center_open *****************
+ Defined at:
+		line 205 in file "maze.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_motor_left_power
+		_motor_right_power
+ This function is called by:
+		_centering
+ This function uses a non-reentrant model
+
+
+ *************** function _motor_left_power *****************
+ Defined at:
+		line 140 in file "motor.c"
+ Parameters:    Size  Location     Type
+  p               1    0[BANK0 ] char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_set_power
+		_time_turn_test
+		_motor_set_target
+		_message
+		_center_straight
+		_center_close
+		_center_open
+ This function uses a non-reentrant model
+
+
+ *************** function _motor_right_power *****************
+ Defined at:
+		line 150 in file "motor.c"
+ Parameters:    Size  Location     Type
+  p               1    0[BANK0 ] char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_set_power
+		_time_turn_test
+		_motor_set_target
+		_message
+		_center_straight
+		_center_close
+		_center_open
+ This function uses a non-reentrant model
+
+
+ *************** function _isdigit *****************
+ Defined at:
+		line 13 in file "/opt/microchip/xc8/v1.12/sources/isdigit.c"
+ Parameters:    Size  Location     Type
+  c               1    0[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_atoi
+ This function uses a non-reentrant model
+
+
+ *************** function _cgets *****************
+ Defined at:
+		line 5 in file "/opt/microchip/xc8/v1.12/sources/cgets.c"
+ Parameters:    Size  Location     Type
+  s               2    2[BANK0 ] PTR unsigned char 
+		 -> buf(80), 
+ Auto vars:     Size  Location     Type
+  s1              2    9[BANK0 ] PTR unsigned char 
+		 -> buf(80), 
+  c               2    7[BANK0 ] int 
+ Return value:  Size  Location     Type
+                  2    2[BANK0 ] PTR unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       9       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_putch
+		_getche
+ This function is called by:
+		_gets
+ This function uses a non-reentrant model
+
+
+ *************** function _getche *****************
+ Defined at:
+		line 182 in file "user.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  value           1    1[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_putch
+ This function is called by:
+		_cgets
+ This function uses a non-reentrant model
+
+
+ *************** function _putch *****************
+ Defined at:
+		line 176 in file "user.c"
+ Parameters:    Size  Location     Type
+  c               1    0[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_getche
+		_printf
+		_cgets
+ This function uses a non-reentrant model
+
+
+ *************** function ___lwdiv *****************
+ Defined at:
+		line 10 in file "/opt/microchip/xc8/v1.12/sources/lwdiv.c"
+ Parameters:    Size  Location     Type
+  dividend        2    0[BANK0 ] unsigned int 
+  divisor         2    2[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  quotient        2    6[BANK0 ] unsigned int 
+  counter         1    5[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_ping_convert
+		_printf
+ This function uses a non-reentrant model
+
+
+ *************** function ___lwmod *****************
+ Defined at:
+		line 10 in file "/opt/microchip/xc8/v1.12/sources/lwmod.c"
+ Parameters:    Size  Location     Type
+  dividend        2    8[BANK0 ] unsigned int 
+  divisor         2   10[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  counter         1   13[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2    8[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_printf
+ This function uses a non-reentrant model
+
+
+ *************** function ___wmul *****************
+ Defined at:
+		line 3 in file "/opt/microchip/xc8/v1.12/sources/wmul.c"
+ Parameters:    Size  Location     Type
+  multiplier      2    0[BANK0 ] unsigned int 
+  multiplicand    2    2[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  product         2    4[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		Nothing
+ This function is called by:
+		_atoi
+ This function uses a non-reentrant model
+
+
+ *************** function _low_isr *****************
+ Defined at:
+		line 98 in file "interrupts.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:         17       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        17       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       17 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		Interrupt level 1
+ This function uses a non-reentrant model
+
+
+ *************** function _high_isr *****************
+ Defined at:
+		line 40 in file "interrupts.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, structret, tblptrl, tblptrh, tblptru, prodl, prodh, bsr, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:         14       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        14       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_motor_interupt
+		_motor_enc_interupt
+ This function is called by:
+		Interrupt level 2
+ This function uses a non-reentrant model
+
+
+ *************** function _motor_interupt *****************
+ Defined at:
+		line 43 in file "motor.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_abval
+		_left_off
+		_right_off
+		_left_on
+		_right_on
+ This function is called by:
+		_high_isr
+ This function uses a non-reentrant model
+
+
+ *************** function _motor_enc_interupt *****************
+ Defined at:
+		line 72 in file "motor.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_high_isr
+ This function uses a non-reentrant model
+
+
+ *************** function _left_on *****************
+ Defined at:
+		line 8 in file "motor.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_motor_interupt
+ This function uses a non-reentrant model
+
+
+ *************** function _left_off *****************
+ Defined at:
+		line 16 in file "motor.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_motor_interupt
+ This function uses a non-reentrant model
+
+
+ *************** function _right_on *****************
+ Defined at:
+		line 23 in file "motor.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_motor_interupt
+ This function uses a non-reentrant model
+
+
+ *************** function _right_off *****************
+ Defined at:
+		line 31 in file "motor.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_motor_interupt
+ This function uses a non-reentrant model
+
+
+ *************** function _abval *****************
+ Defined at:
+		line 38 in file "motor.c"
+ Parameters:    Size  Location     Type
+  val             1   17[COMRAM] char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15
+      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_motor_interupt
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+sonic.c
+		_ping_lb       		CODE           	2100	0000	30
+		_p_front       		CODE           	13D2	0000	176
+		_p_lb          		CODE           	1532	0000	176
+		_p_right       		CODE           	15E2	0000	176
+		_p_lf          		CODE           	1482	0000	176
+		_ping_lf       		CODE           	20E2	0000	30
+		_ping_right    		CODE           	211E	0000	30
+		_ping_convert  		CODE           	1EBA	0000	58
+		_sonic_test    		CODE           	1D64	0000	82
+		_ping_front    		CODE           	20C4	0000	30
+
+sonic.c estimated size: 964
+
+/opt/microchip/xc8/v1.12/sources/cgets.c
+		_cgets         		CODE           	09AE	0000	354
+
+/opt/microchip/xc8/v1.12/sources/cgets.c estimated size: 354
+
+maze.c
+		_center_close  		CODE           	1FC0	0000	46
+		_maze_loop     		CODE           	1E00	0000	62
+		_branching     		CODE           	1A34	0000	140
+		_centering_angl		CODE           	1186	0000	212
+		_centering_stat		CODE           	0ED4	0000	244
+		_collect_sensor		CODE           	0FC8	0000	228
+		_maze_debug    		CODE           	06FC	0000	690
+		_center_straigh		CODE           	1F92	0000	46
+		_centering     		CODE           	1AC0	0000	136
+		_is_branch     		CODE           	1692	0000	164
+		_message       		CODE           	1D10	0000	84
+		_center_open   		CODE           	1FEE	0000	46
+
+maze.c estimated size: 2098
+
+motor.c
+		_abval         		CODE           	1F2C	0000	54
+		_motor_right_po		CODE           	1E7C	0000	62
+		_left_off      		CODE           	21B0	0000	8
+		_motor_enc_clea		CODE           	2164	0000	18
+		_motor_set_targ		CODE           	0DA4	0000	304
+		_motor_enc_inte		CODE           	1EF4	0000	56
+		_right_on      		CODE           	2082	0000	34
+		_right_off     		CODE           	21B8	0000	8
+		_motor_left_pow		CODE           	1E3E	0000	62
+		_left_on       		CODE           	2060	0000	34
+		_motor_interupt		CODE           	1736	0000	162
+
+motor.c estimated size: 802
+
+/opt/microchip/xc8/v1.12/sources/atoi.c
+		_atoi          		CODE           	0B10	0000	338
+
+/opt/microchip/xc8/v1.12/sources/atoi.c estimated size: 338
+
+shared
+		__stringdata   		MEDIUMCONST    	FDEC	0000	530
+		_dpowers       		MEDIUMCONST    	FDE2	0000	10
+		__initializatio		CODE           	1F62	0000	42
+
+shared estimated size: 582
+
+/opt/microchip/xc8/v1.12/sources/isdigit.c
+		_isdigit       		CODE           	1DB6	0000	74
+
+/opt/microchip/xc8/v1.12/sources/isdigit.c estimated size: 74
+
+main.c
+		_turn_enc_test 		CODE           	131A	0000	184
+		_main          		CODE           	00A6	0000	884
+		_encoder_test  		CODE           	201C	0000	34
+		_set_power     		CODE           	1878	0000	158
+		_time_turn_test		CODE           	0C62	0000	322
+
+main.c estimated size: 1582
+
+system.c
+		_ConfigureOscil		CODE           	213C	0000	22
+
+system.c estimated size: 22
+
+interrupts.c
+		_high_isr      		CODE           	0008	0000	4478
+		_low_isr       		CODE           	0018	0000	138
+
+interrupts.c estimated size: 4616
+
+/opt/microchip/xc8/v1.12/sources/wmul.c
+		___wmul        		CODE           	1C46	0000	104
+
+/opt/microchip/xc8/v1.12/sources/wmul.c estimated size: 104
+
+/opt/microchip/xc8/v1.12/sources/lwmod.c
+		___lwmod       		CODE           	17D8	0000	160
+
+/opt/microchip/xc8/v1.12/sources/lwmod.c estimated size: 160
+
+/opt/microchip/xc8/v1.12/sources/lwdiv.c
+		___lwdiv       		CODE           	125A	0000	192
+
+/opt/microchip/xc8/v1.12/sources/lwdiv.c estimated size: 192
+
+/opt/microchip/xc8/v1.12/sources/doprnt.c
+		_printf        		CODE           	041A	0000	738
+
+/opt/microchip/xc8/v1.12/sources/doprnt.c estimated size: 738
+
+/opt/microchip/xc8/v1.12/sources/gets.c
+		_gets          		CODE           	2152	0000	18
+
+/opt/microchip/xc8/v1.12/sources/gets.c estimated size: 18
+
+user.c
+		_putch         		CODE           	2186	0000	16
+		_beep          		CODE           	19A8	0000	140
+		_sys_delay_ms  		CODE           	1CAE	0000	98
+		_init_uart     		CODE           	21A4	0000	12
+		_init_motor_tim		CODE           	21C0	0000	6
+		_InitApp       		CODE           	1916	0000	146
+		_getche        		CODE           	203E	0000	34
+		_init_sonic_tim		CODE           	2176	0000	16
+		_stop_sonic_tim		CODE           	20A4	0000	32
+		_beep_message  		CODE           	1B48	0000	130
+		_start_sonic_ti		CODE           	2196	0000	14
+
+user.c estimated size: 644
+
+/opt/microchip/xc8/v1.12/sources/strcmp.c
+		_strcmp        		CODE           	1BCA	0000	124
+
+/opt/microchip/xc8/v1.12/sources/strcmp.c estimated size: 124
+
